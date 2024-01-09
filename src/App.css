@@ -1,0 +1,19 @@
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+.black-gradient {
+  background: rgb(40, 40, 40);
+  background: radial-gradient(
+    circle,
+    rgba(21, 21, 21, 0.73) 0%,
+    rgba(0, 0, 0, 1) 75%
+  );
+}
+.home-main {
+  background-image: url("./assets/bottom-green.svg");
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-size: 500px;
+}
