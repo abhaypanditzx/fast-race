@@ -10,7 +10,7 @@ const Navbar = (props) => {
   const [activeLink, setActiveLink] = useState("/");
   const [toggle, setToggle] = useState(false);
   return (
-    <nav className="flex items-center sticky top-0 w-full h-[5rem] z-50 bg-gray-900/10 justify-around  px-5">
+    <nav className="flex items-center sticky top-0 w-full h-[5rem] z-50 bg-gray-900 justify-around  px-5">
       <div className="w-fit">
         <a href="#" className="text-green-500 text-xl">
           FR

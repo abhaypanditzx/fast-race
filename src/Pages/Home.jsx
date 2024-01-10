@@ -1,6 +1,7 @@
 import React from "react";
 import greenBg from "../assets/bottom-green.svg";
 import pngShoe from "../assets/fashion-shoes-sneakers-removebg-preview.png";
+import { Link } from "react-router-dom";
 
 const Home = () => {
  
@@ -16,9 +17,9 @@ const Home = () => {
           unparalleled comfort, redefining your journey in every stride.
           Experience the perfect fusion of fashion and well-being with us."
         </p>
-        <button className="bg-white px-3 py-2 w-fit mt-5 z-10 rounded-sm  max-xs:text-sm  capitalize text-lg font-medium ">
+        <Link to="/Categories" className="bg-white px-3 py-2 w-fit mt-5 z-10 rounded-sm  max-xs:text-sm  capitalize text-lg font-medium ">
           explore more
-        </button>
+        </Link>
       </div>
       <div  className="black-gradient flex jusitfy-center  fixed  w-fit  z-20   max-xs:absolute right-0  items-center ">
         <img src={pngShoe} className="h-[400px] max-md:opacity-20 max-xs:h-[300px] " alt="shoe" />
