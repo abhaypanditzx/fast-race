@@ -10,8 +10,7 @@ const Categories = () => {
   return (
     <div className=" h-full w-full">
       <Filter />
-      <div className="flex flex-col">
-        <div className="w-full p-4  bg-[#161616] items-center flex">
+      <div className="w-full p-4  bg-Lgrey  items-center flex">
           <button
             onClick={() => {
               setFilter(!filter);
@@ -24,7 +23,6 @@ const Categories = () => {
             </span>
           </button>
         </div>
-      </div>
       <section className="flex gap-x-10  justify-center p-10 items-center w-full">
         {TwoCategory.map((e, index) => {
           return (
@@ -52,7 +50,7 @@ const Categories = () => {
             return (
               <div
                 key={`trending-${index}`}
-                className="border-[1px] border-[#707070] bg-[#161616] rounded-md h-[300px] p-4 min-w-[250px] "
+                className="border-[1px] border-[#707070] bg-Mgrey rounded-md h-[300px] p-4 min-w-[250px] "
               >
                 <div className="overflow-hidden w-full rounded-md h-[180px]">
                   <img src={e.image} className="object-fill" alt="" />
@@ -75,7 +73,7 @@ const Categories = () => {
             return (
               <div
                 key={`trending-${index}`}
-                className="border-[1px] border-[#707070] bg-[#161616] rounded-md h-[300px] p-4 min-w-[250px] "
+                className="border-[1px] border-[#707070] bg-Mgrey rounded-md h-[300px] p-4 min-w-[250px] "
               >
                 <div className="overflow-hidden w-full rounded-md h-[180px]">
                   <img src={e.image} className="object-fill" alt="" />
@@ -95,12 +93,12 @@ const Categories = () => {
         onClick={() => {
           window.scrollTo(0, 0);
         }}
-        className="flex flex-col cursor-pointer w-fit m-auto p-5 items-center gap-2 h-fit"
+        className="flex flex-col cursor-pointer w-fit m-auto py-4 items-center gap-2 h-fit"
       >
-        <button className="bg-[#1E1E1E] h-[70px] text-3xl rounded-full flex justify-center items-center w-[70px] text-white ">
+        <button className="bg-[#1E1E1E] h-[50px] w-[50px] text-3xl rounded-full flex justify-center items-center  text-white ">
           <BsChevronDoubleUp />
         </button>
-        <h2 className="text-xl uppercase font-[600] text-white">back to top</h2>
+        <h2 className="text-lg uppercase font-[600] text-white">back to top</h2>
       </div>
     </div>
   );
