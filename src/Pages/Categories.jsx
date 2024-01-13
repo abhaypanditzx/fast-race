@@ -36,7 +36,7 @@ const Categories = () => {
                 <h1 className="text-white max-xs:text-lg xs:text-xl pb-2">
                   {e.title}
                 </h1>
-                <button className="bg-white  h-fit w-fit rounded-xl max-xs:text-sm max-xs:px-3  shadow-md px-6 font-semibold py-1">
+                <button className="bg-white  h-fit w-fit rounded-xl max-xs:text-sm max-xs:px-5  shadow-md px-6 font-semibold py-1">
                   Shop
                 </button>
               </div>
