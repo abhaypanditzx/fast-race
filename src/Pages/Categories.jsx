@@ -10,6 +10,7 @@ const Categories = () => {
   return (
     <div className=" h-full w-full">
       <Filter />
+      {/* filter close open  */}
       <div className="w-full p-4  bg-Lgrey  items-center flex">
           <button
             onClick={() => {
@@ -23,12 +24,12 @@ const Categories = () => {
             </span>
           </button>
         </div>
-      <section className="flex gap-x-10  justify-center p-10 items-center w-full">
+      <section className="flex max-sm:gap-x-0 max-sm:gap-y-10 sm:gap-x-10  justify-center max-sm:flex-col sm:flex-row p-10 items-center w-full">
         {TwoCategory.map((e, index) => {
           return (
             <div
               key={`category-${index}`}
-              className={`relative ${e.class} cursor-pointer flex   bg-no-repeat bg-cover h-[500px] w-[400px] max-xs:w-[200px] max-xs:h-[210px] min-h-[200px] min-w-[100px]`}
+              className={`relative ${e.class} cursor-pointer flex   bg-no-repeat bg-cover h-[500px] w-[400px] max-xs:w-[300px] max-xs:h-[400px] min-h-[200px] min-w-[100px]`}
             >
               <div className="bg-black/50 hover:bg-black/10  z-0 absolute top-0 left-0 h-full w-full"></div>
               <div className="z-10 relative self-end max-xs:p-2 xs:p-5 gap-y-4">
@@ -67,7 +68,7 @@ const Categories = () => {
       </div>
 
       <div className="flex-col gap-y-5 p-10 flex">
-        <h1 className="text-3xl rubik text-white">Trending</h1>
+        <h1 className="text-3xl rubik text-white">New Products</h1>
         <div className="flex w-full overflow-scroll scroll-none justify-start gap-x-4  ">
           {Trending.map((e, index) => {
             return (

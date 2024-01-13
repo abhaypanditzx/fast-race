@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import skate from "../assets/skate.mp4";
 const About = () => {
+  const [videoSrc, setVideoSrc] = useState(skate);
+
   return (
     <div className="w-screen overflow-hidden   text-wrap">
       <video
@@ -9,7 +11,7 @@ const About = () => {
         muted
         className="absolute top-12 opacity-50 left-0 z-[-1] w-full"
       >
-        <source src={skate} type="video/mp4" />
+        <source src={videoSrc} type="video/mp4" />
       </video>
       <div className="flex flex-col">
         <h1 className="lg:text-[13rem] md:text-[8rem] sm:text-[6rem] leading-[1.2] max-xs:text-[2.5rem] xs:text-[6rem] p-2 font-[600] uppercase text-white">
@@ -21,9 +23,7 @@ const About = () => {
       </div>
       <div className="  w-full max-sm:mt-10 p-5 ">
         <div className="w-full items-center max-sm:flex-col-reverse flex-row  bg-Lgrey/20  p-4 m-auto  flex ">
-          <h4
-            className=" text-white font-[500] tracking-wide p-3  font-lora  max-w-[600px] w-full h-full"
-          >
+          <h4 className=" text-white font-[500] tracking-wide p-3  font-lora  max-w-[600px] w-full h-full">
             “ At Fast Race, we're passionate about empowering people of all
             genders to reach their full potential, one stride at a time. We
             believe the right footwear can be the difference between a sluggish

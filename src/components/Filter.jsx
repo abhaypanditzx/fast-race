@@ -23,7 +23,7 @@ const Filter = () => {
         <div className="p-4">
           <label
             htmlFor="default-range"
-            className="block mb-2 text-base font-medium text-gray-900 dark:text-white"
+            className="block mb-2 text-base font-[500] capitalize  text-white"
           >
             Price range
           </label>
@@ -32,11 +32,11 @@ const Filter = () => {
             type="range"
             max={100}
             min={10}
-            className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700"
+            className="w-full h-2  rounded-lg appearance-none cursor-pointer bg-gray-700"
           />
         </div>
         <div className="p-4">
-          <span className="block mb-2 text-base font-medium text-gray-900 dark:text-white">
+          <span className="block mb-2 text-base font-[500] capitalize  text-gray-900 dark:text-white">
             size
           </span>
           <select
@@ -67,15 +67,15 @@ const Filter = () => {
           </select>
         </div>
         <div className=" p-4  text-white">
-          <span className="block mb-2 text-base font-medium text-gray-900 dark:text-white">
+          <span className="block mb-2 text-base font-[500] capitalize  text-white">
             gender
           </span>
           <div className="flex gap-x-2">
             <label
               htmlFor="female"
-              className="block mb-2  bg-[#1e1e1e] p-1 text-base font-medium text-gray-900 dark:text-white"
+              className="block mb-2  bg-[#1e1e1e] p-1 text-base font-medium text-white"
             >
-              <input type="radio" name="gender" className="gap-" id="female" />
+              <input type="radio" name="gender" id="female" />
               <span className="p-1">male</span>
             </label>
             <label
@@ -87,8 +87,8 @@ const Filter = () => {
             </label>
           </div>
         </div>
-        <div className=" absolute flex-wrap bottom-5 p-4 w-full max-xs:flex- justify-around flex ">
-          <button className=" bg-[#1e1e1e] font-[500] uppercase text-white xs:w-[180px] max-xs:text-[10px] text-md max-xs:h-[30px] max-xs:w-[100px] h-[40px] shadow-md ">
+        <div className=" absolute flex-wrap bottom-6 p-4 w-full max-xs:flex- justify-around flex ">
+          <button className=" bg-[#1e1e1e] font-[500] uppercase text-white xs:w-[180px] max-xs:text-[10px] text-md max-xs:h-[30px] max-xs:w-fit max-xs:px-2  h-[40px] shadow-md ">
             clear all filters
           </button>
           <button className=" bg-[#28cd0d] font-[600] uppercase text-white xs:w-[160px] max-xs:text-sm max-xs:h-[30px] max-xs:w-[80px] h-[40px] shadow-md ">
