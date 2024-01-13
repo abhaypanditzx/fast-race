@@ -87,7 +87,7 @@ const Filter = () => {
             </label>
           </div>
         </div>
-        <div className=" absolute flex-wrap bottom-6 max-sm:bottom-10 p-4 w-full max-xs:flex- justify-around flex ">
+        <div className=" absolute flex-wrap bottom-6 max-sm:bottom-[5rem] p-4 w-full max-xs:flex- justify-around flex ">
           <button className=" bg-[#1e1e1e] font-[500] uppercase text-white xs:w-[180px] max-xs:text-[10px] text-md max-xs:h-[30px] max-xs:w-fit max-xs:px-2  h-[40px] shadow-md ">
             clear all filters
           </button>
