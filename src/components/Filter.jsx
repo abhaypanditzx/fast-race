@@ -11,7 +11,7 @@ const Filter = () => {
       } duration-300  flex flex-col z-50 bg-[#090909] h-screen overflow-hidden fixed top-0 right-0`}
     >
       <div className="nav flex  justify-between items-center text-gray-200 text-2xl h-[70px] border-b-[1px] bordr-[#707070] py-2 px-4 ">
-        <span classsName="w-max">Filter and sort</span>{" "}
+        <span className="w-max">Filter and sort</span>{" "}
         <RxCross2
           className="cursor-pointer "
           onClick={() => {
@@ -72,14 +72,14 @@ const Filter = () => {
           </span>
           <div className="flex gap-x-2">
             <label
-              htmlFor="my"
+              htmlFor="female"
               className="block mb-2  bg-[#1e1e1e] p-1 text-base font-medium text-gray-900 dark:text-white"
             >
               <input type="radio" name="gender" className="gap-" id="female" />
               <span className="p-1">male</span>
             </label>
             <label
-              htmlFor="my"
+              htmlFor="male"
               className="block mb-2  bg-[#1e1e1e] p-1 text-base font-medium text-gray-900 dark:text-white"
             >
               <input type="radio" name="gender" id="male" />
@@ -87,8 +87,8 @@ const Filter = () => {
             </label>
           </div>
         </div>
-        <div className=" absolute flex-wrap bottom-5 p-4 w-full justify-around flex ">
-          <button className=" bg-[#1e1e1e] font-[500] uppercase text-white xs:w-[180px] text-md max-xs:h-[30px] max-xs:w-[100px] h-[40px] shadow-md ">
+        <div className=" absolute flex-wrap bottom-5 p-4 w-full max-xs:flex- justify-around flex ">
+          <button className=" bg-[#1e1e1e] font-[500] uppercase text-white xs:w-[180px] max-xs:text-[10px] text-md max-xs:h-[30px] max-xs:w-[100px] h-[40px] shadow-md ">
             clear all filters
           </button>
           <button className=" bg-[#28cd0d] font-[600] uppercase text-white xs:w-[160px] max-xs:text-sm max-xs:h-[30px] max-xs:w-[80px] h-[40px] shadow-md ">
