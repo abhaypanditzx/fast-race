@@ -16,6 +16,7 @@ body {
   background-repeat: no-repeat;
   background-position-y: bottom;
   background-size: 500px;
+
 }
 .scroll-none::-webkit-scrollbar{
   display: none;
